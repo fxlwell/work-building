@@ -1,3 +1,4 @@
+### docker 常用命令
 ```
 docker pull image  拉去镜像
 ```
@@ -53,7 +54,23 @@ container 新创建的容器不会创建自己的网卡和ip，而是和指定�
 --network none
 --network container:container_name 
 
-自定义
+自定义网络
+
+docker network create --help
+docker network create mynetwork
+docker run --net/--network mynetwork
+
+ping container_name ok 
+```
+### docker-compose
+```
+docker-compose dwon 清空
+docker-composer up -d
+```
+### 容器编排管理
+#### swarm 小
+#### k8s 大
+```
 ```
 
 
